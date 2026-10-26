@@ -1,0 +1,31 @@
+{
+  "notice": "Synthetic checklists and project-controlled test actors. This does not establish production adoption, action execution, infrastructure safety or neutral human reviewers.",
+  "scope": "One synthetic service; all listed steps share the same maintenance window. Text describes a plan, not an instruction to execute it.",
+  "scenarios": [
+    {
+      "fixture": "auto-merge",
+      "id": "auto-merge-v1",
+      "base": [
+        {"id": "backup", "text": "Create the backup before the restart task."},
+        {"id": "restart", "text": "Run restart after backup succeeds."}
+      ],
+      "left": [
+        {"id": "backup", "text": "Create the backup before restart and record its identifier."},
+        {"id": "restart", "text": "Run restart after backup succeeds."}
+      ],
+      "right": [
+        {"id": "backup", "text": "Create the backup before the restart task."},
+        {"id": "restart", "text": "Run restart after backup succeeds, then record its timestamp."}
+      ],
+      "choices": {}
+    },
+    {
+      "fixture": "manual-conflict",
+      "id": "manual-conflict-v1",
+      "base": [{"id": "color", "text": "Set deployment color to BLUE."}],
+      "left": [{"id": "color", "text": "Set deployment color to RED."}],
+      "right": [{"id": "color", "text": "Set deployment color to GREEN."}],
+      "choices": {"color": "LEFT"}
+    }
+  ]
+}

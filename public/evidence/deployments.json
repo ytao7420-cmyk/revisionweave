@@ -1,0 +1,119 @@
+{
+  "notice": "Historical test deployments; a deployed contract is not evidence of a complete workflow.",
+  "deployments": [
+    {
+      "deployed": true,
+      "network": "GenLayer Studionet",
+      "chainId": 61999,
+      "rpc": "https://studio.genlayer.com/api",
+      "explorer": "https://explorer-studio.genlayer.com",
+      "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+      "consumerAddress": "0xD56445cbFb3f2C8b32232686CFF79c6277340AAe",
+      "sourceSha256": "b0c4ae32600fb09c575fde677b3e493b2ea5042904f95aae8b9181da33697d39",
+      "consumerSourceSha256": "1fea5923d2217bc81138e7cb17c08aa563465c12ea6fd9d9e5dce20a118d117b",
+      "deploymentDomain": "14ce155533895c70b45e2898b2314eaad10dae5762460a9d29c134e1fd54e5ad",
+      "deployer": "0x6999C1Bf19CfaaD571785f71e5b8b363a2624fda",
+      "deploymentTransactions": [
+        {
+          "hash": "0xc3616d56f747c4bb53a6d996f7abcde967886ee07819b1c475c4b9c2af37624b",
+          "label": "deploy-weave",
+          "receipt": {
+            "status": "FINALIZED",
+            "execution": "SUCCESS",
+            "executionResult": "SUCCESS",
+            "consensusResult": "MAJORITY_AGREE",
+            "leaderOnly": false,
+            "votes": {
+              "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+              "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+              "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+              "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+              "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree"
+            },
+            "createdAt": "2026-10-26T11:18:46.091281+00:00",
+            "observedAt": "2026-10-26T12:00:47.966Z"
+          }
+        },
+        {
+          "hash": "0x34780880ae770922d53c2eb6974f78c39edd77efeaabd8246bde6c9fe73f95dc",
+          "label": "deploy-consumer",
+          "receipt": {
+            "status": "FINALIZED",
+            "execution": "SUCCESS",
+            "executionResult": "SUCCESS",
+            "consensusResult": "MAJORITY_AGREE",
+            "leaderOnly": false,
+            "votes": {
+              "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+              "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+              "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+              "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+              "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+            },
+            "createdAt": "2026-10-26T11:19:10.445169+00:00",
+            "observedAt": "2026-10-26T12:00:47.966Z"
+          }
+        }
+      ],
+      "verifiedAt": "2026-10-26T12:00:47.966Z",
+      "notice": "Synthetic checklists and project-controlled test actors. This does not establish production adoption, action execution, infrastructure safety or neutral human reviewers."
+    },
+    {
+      "deployed": true,
+      "network": "GenLayer Studionet",
+      "chainId": 61999,
+      "rpc": "https://studio.genlayer.com/api",
+      "explorer": "https://explorer-studio.genlayer.com",
+      "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+      "consumerAddress": "0x9B01ACE337e3318ecB7eCf5fC3b47203Acd70542",
+      "sourceSha256": "f925e7f97a2ff32278a764a4cb1890bba6481cb484680f5a09cd3c746297b7d4",
+      "consumerSourceSha256": "1fea5923d2217bc81138e7cb17c08aa563465c12ea6fd9d9e5dce20a118d117b",
+      "deploymentDomain": "e0d3b528e4c39edd9525e6e8e2793926a7ad91cae292b183a20cbccff3cd04a3",
+      "deployer": "0x6999C1Bf19CfaaD571785f71e5b8b363a2624fda",
+      "deploymentTransactions": [
+        {
+          "hash": "0x8069ecb660f0b8d8ccd2d7c3a323800501f16acd5eb5ad819652d3ccbb653deb",
+          "label": "deploy-weave",
+          "receipt": {
+            "status": "ACCEPTED",
+            "execution": "SUCCESS",
+            "executionResult": "SUCCESS",
+            "consensusResult": "MAJORITY_AGREE",
+            "leaderOnly": false,
+            "votes": {
+              "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+              "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+              "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+              "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "idle",
+              "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree"
+            },
+            "createdAt": "2026-10-26T13:26:22.478482+00:00",
+            "observedAt": "2026-10-26T13:26:46.387Z"
+          }
+        },
+        {
+          "hash": "0x45a3d0321577e446dfcf5e31720ba0f8f7b53467cbb8803ba602110acaa7fdee",
+          "label": "deploy-consumer",
+          "receipt": {
+            "status": "ACCEPTED",
+            "execution": "SUCCESS",
+            "executionResult": "SUCCESS",
+            "consensusResult": "MAJORITY_AGREE",
+            "leaderOnly": false,
+            "votes": {
+              "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+              "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+              "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+              "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+              "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+            },
+            "createdAt": "2026-10-26T13:26:35.454359+00:00",
+            "observedAt": "2026-10-26T13:26:46.387Z"
+          }
+        }
+      ],
+      "verifiedAt": "2026-10-26T13:26:46.387Z",
+      "notice": "Synthetic checklists and project-controlled test actors. This does not establish production adoption, action execution, infrastructure safety or neutral human reviewers."
+    }
+  ]
+}

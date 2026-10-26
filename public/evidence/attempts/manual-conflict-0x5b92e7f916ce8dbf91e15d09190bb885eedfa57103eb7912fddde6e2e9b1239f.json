@@ -1,0 +1,333 @@
+{
+  "hash": "0x5b92e7f916ce8dbf91e15d09190bb885eedfa57103eb7912fddde6e2e9b1239f",
+  "from_address": "0x58f9E846b394C862caD8A1f067600da234847df5",
+  "to_address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+  "statusName": "FINALIZED",
+  "result_name": "MAJORITY_DISAGREE",
+  "leader_only": false,
+  "tx_data": "f8a1b89e16046172677325d40230783934363338353062313446314662374161373145393032393534376637663538333263303933316694016d616e75616c2d636f6e666c6963742d763109840466613364313836653335623065383364653164623931643335323136646533373539336636336437316335633566383830376134376238343836356666636264066d6574686f64646174746573745f6d6572676500",
+  "data": {
+    "calldata": {
+      "base64": "FgRhcmdzJdQCMHg5NDYzODUwYjE0RjFGYjdBYTcxRTkwMjk1NDdmN2Y1ODMyYzA5MzFmlAFtYW51YWwtY29uZmxpY3QtdjEJhARmYTNkMTg2ZTM1YjBlODNkZTFkYjkxZDM1MjE2ZGUzNzU5M2Y2M2Q3MWM1YzVmODgwN2E0N2I4NDg2NWZmY2JkBm1ldGhvZGRhdHRlc3RfbWVyZ2U=",
+      "raw": [
+        22,
+        4,
+        97,
+        114,
+        103,
+        115,
+        37,
+        212,
+        2,
+        48,
+        120,
+        57,
+        52,
+        54,
+        51,
+        56,
+        53,
+        48,
+        98,
+        49,
+        52,
+        70,
+        49,
+        70,
+        98,
+        55,
+        65,
+        97,
+        55,
+        49,
+        69,
+        57,
+        48,
+        50,
+        57,
+        53,
+        52,
+        55,
+        102,
+        55,
+        102,
+        53,
+        56,
+        51,
+        50,
+        99,
+        48,
+        57,
+        51,
+        49,
+        102,
+        148,
+        1,
+        109,
+        97,
+        110,
+        117,
+        97,
+        108,
+        45,
+        99,
+        111,
+        110,
+        102,
+        108,
+        105,
+        99,
+        116,
+        45,
+        118,
+        49,
+        9,
+        132,
+        4,
+        102,
+        97,
+        51,
+        100,
+        49,
+        56,
+        54,
+        101,
+        51,
+        53,
+        98,
+        48,
+        101,
+        56,
+        51,
+        100,
+        101,
+        49,
+        100,
+        98,
+        57,
+        49,
+        100,
+        51,
+        53,
+        50,
+        49,
+        54,
+        100,
+        101,
+        51,
+        55,
+        53,
+        57,
+        51,
+        102,
+        54,
+        51,
+        100,
+        55,
+        49,
+        99,
+        53,
+        99,
+        53,
+        102,
+        56,
+        56,
+        48,
+        55,
+        97,
+        52,
+        55,
+        98,
+        56,
+        52,
+        56,
+        54,
+        53,
+        102,
+        102,
+        99,
+        98,
+        100,
+        6,
+        109,
+        101,
+        116,
+        104,
+        111,
+        100,
+        100,
+        97,
+        116,
+        116,
+        101,
+        115,
+        116,
+        95,
+        109,
+        101,
+        114,
+        103,
+        101
+      ],
+      "readable": "{\"args\":[\"0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f\",\"manual-conflict-v1\",1,\"fa3d186e35b0e83de1db91d35216de37593f63d71c5c5f8807a47b84865ffcbd\",]\"method\":\"attest_merge\"}"
+    }
+  },
+  "signed_rollup_transaction": "0xf901e903808307a12094b7278a61aa25c888815afc32ad3cc52ff24fe57580b9018427241a9900000000000000000000000058f9e846b394c862cad8a1f067600da234847df5000000000000000000000000480e227e2759bf88966369b63d9b163ad58936950000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000a3f8a1b89e16046172677325d40230783934363338353062313446314662374161373145393032393534376637663538333263303933316694016d616e75616c2d636f6e666c6963742d763109840466613364313836653335623065383364653164623931643335323136646533373539336636336437316335633566383830376134376238343836356666636264066d6574686f64646174746573745f6d657267650000000000000000000000000000000000000000000000000000000000008301e481a02d061ef8ed3d0d0edb02a2688dfb85da4e74515def5b98414d1e6a42898b5072a03fb3cbefb16f3349cf4201c3b81636a97d053626e0e272fc9a81c37bcf63bd71",
+  "consensus_data": {
+    "votes": {
+      "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+      "0x336458747913FE397be82c4F0926ACeB3ab13618": "disagree",
+      "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+      "0xCe0B66448435cA53665C954705Abd753515594Cf": "disagree",
+      "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "disagree"
+    },
+    "leader_receipt": [
+      {
+        "mode": "leader",
+        "execution_result": "ERROR",
+        "result": {
+          "raw": "AUNvbmZsaWN0IHBhaXJzIG11c3QgYmUgdW5pcXVlLCBzb3J0ZWQgY2FuZGlkYXRlIElEcw==",
+          "status": "rollback",
+          "payload": "Conflict pairs must be unique, sorted candidate IDs"
+        },
+        "eq_outputs": {
+          "0": {
+            "raw": "AUNvbmZsaWN0IHBhaXJzIG11c3QgYmUgdW5pcXVlLCBzb3J0ZWQgY2FuZGlkYXRlIElEcw==",
+            "status": "rollback",
+            "payload": "Conflict pairs must be unique, sorted candidate IDs"
+          }
+        }
+      },
+      {
+        "mode": "validator",
+        "execution_result": "ERROR",
+        "result": {
+          "raw": "AUNvbmZsaWN0IHBhaXJzIG11c3QgYmUgdW5pcXVlLCBzb3J0ZWQgY2FuZGlkYXRlIElEcw==",
+          "status": "rollback",
+          "payload": "Conflict pairs must be unique, sorted candidate IDs"
+        },
+        "eq_outputs": null
+      }
+    ],
+    "validators": [
+      {
+        "mode": "validator",
+        "vote": "idle",
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stdout": "",
+          "stderr": "Validator execution cancelled after quorum"
+        }
+      },
+      {
+        "mode": "validator",
+        "vote": "idle",
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stdout": "",
+          "stderr": "Validator execution cancelled after quorum"
+        }
+      },
+      {
+        "mode": "validator",
+        "vote": "disagree",
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      {
+        "mode": "validator",
+        "vote": "disagree",
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stdout": "",
+          "stderr": ""
+        }
+      }
+    ]
+  },
+  "sourceSha256": "b0c4ae32600fb09c575fde677b3e493b2ea5042904f95aae8b9181da33697d39",
+  "notice": "Actual unplanned manual-conflict attestation failure. Selected public fields only; no model/node configuration or keys. This is not an expected negative test and is not a successful workflow.",
+  "savedIntent": {
+    "label": "manual-conflict-v1-attest",
+    "spec": {
+      "kind": "call",
+      "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+      "actor": "0x58f9E846b394C862caD8A1f067600da234847df5",
+      "method": "attest_merge",
+      "args": [
+        "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+        "manual-conflict-v1",
+        1,
+        "fa3d186e35b0e83de1db91d35216de37593f63d71c5c5f8807a47b84865ffcbd"
+      ],
+      "value": "0",
+      "leaderOnly": false
+    }
+  },
+  "actors": {
+    "coordinator": "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+    "left": "0x492E3ee45923db9EEA6ea41FE2f414e7C0552417",
+    "right": "0x58f9E846b394C862caD8A1f067600da234847df5",
+    "consumer": "0x8d510C0665364BE57B0fCC9bDcAEa42405aB43aa"
+  },
+  "deploymentSnapshot": {
+    "deployed": true,
+    "network": "GenLayer Studionet",
+    "chainId": 61999,
+    "rpc": "https://studio.genlayer.com/api",
+    "explorer": "https://explorer-studio.genlayer.com",
+    "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+    "consumerAddress": "0xD56445cbFb3f2C8b32232686CFF79c6277340AAe",
+    "sourceSha256": "b0c4ae32600fb09c575fde677b3e493b2ea5042904f95aae8b9181da33697d39",
+    "consumerSourceSha256": "1fea5923d2217bc81138e7cb17c08aa563465c12ea6fd9d9e5dce20a118d117b",
+    "deploymentDomain": "14ce155533895c70b45e2898b2314eaad10dae5762460a9d29c134e1fd54e5ad",
+    "deployer": "0x6999C1Bf19CfaaD571785f71e5b8b363a2624fda",
+    "deploymentTransactions": [
+      {
+        "hash": "0xc3616d56f747c4bb53a6d996f7abcde967886ee07819b1c475c4b9c2af37624b",
+        "label": "deploy-weave",
+        "receipt": {
+          "status": "FINALIZED",
+          "execution": "SUCCESS",
+          "executionResult": "SUCCESS",
+          "consensusResult": "MAJORITY_AGREE",
+          "leaderOnly": false,
+          "votes": {
+            "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+            "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+            "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+            "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+            "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree"
+          },
+          "createdAt": "2026-10-26T11:18:46.091281+00:00",
+          "observedAt": "2026-10-26T12:00:47.966Z"
+        }
+      },
+      {
+        "hash": "0x34780880ae770922d53c2eb6974f78c39edd77efeaabd8246bde6c9fe73f95dc",
+        "label": "deploy-consumer",
+        "receipt": {
+          "status": "FINALIZED",
+          "execution": "SUCCESS",
+          "executionResult": "SUCCESS",
+          "consensusResult": "MAJORITY_AGREE",
+          "leaderOnly": false,
+          "votes": {
+            "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+            "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+            "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+            "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+            "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+          },
+          "createdAt": "2026-10-26T11:19:10.445169+00:00",
+          "observedAt": "2026-10-26T12:00:47.966Z"
+        }
+      }
+    ],
+    "verifiedAt": "2026-10-26T12:00:47.966Z",
+    "notice": "Synthetic checklists and project-controlled test actors. This does not establish production adoption, action execution, infrastructure safety or neutral human reviewers."
+  }
+}

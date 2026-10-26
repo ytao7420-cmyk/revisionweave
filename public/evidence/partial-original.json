@@ -1,0 +1,701 @@
+{
+  "verified": false,
+  "supportedScenarioVerified": true,
+  "recordedAt": "2026-10-26T13:14:10.594Z",
+  "chainId": 61999,
+  "deployment": {
+    "deployed": true,
+    "network": "GenLayer Studionet",
+    "chainId": 61999,
+    "rpc": "https://studio.genlayer.com/api",
+    "explorer": "https://explorer-studio.genlayer.com",
+    "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+    "consumerAddress": "0xD56445cbFb3f2C8b32232686CFF79c6277340AAe",
+    "sourceSha256": "b0c4ae32600fb09c575fde677b3e493b2ea5042904f95aae8b9181da33697d39",
+    "consumerSourceSha256": "1fea5923d2217bc81138e7cb17c08aa563465c12ea6fd9d9e5dce20a118d117b",
+    "deploymentDomain": "14ce155533895c70b45e2898b2314eaad10dae5762460a9d29c134e1fd54e5ad",
+    "deployer": "0x6999C1Bf19CfaaD571785f71e5b8b363a2624fda",
+    "deploymentTransactions": [
+      {
+        "hash": "0xc3616d56f747c4bb53a6d996f7abcde967886ee07819b1c475c4b9c2af37624b",
+        "label": "deploy-weave",
+        "receipt": {
+          "status": "FINALIZED",
+          "execution": "SUCCESS",
+          "executionResult": "SUCCESS",
+          "consensusResult": "MAJORITY_AGREE",
+          "leaderOnly": false,
+          "votes": {
+            "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+            "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+            "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+            "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+            "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree"
+          },
+          "createdAt": "2026-10-26T11:18:46.091281+00:00",
+          "observedAt": "2026-10-26T12:00:47.966Z"
+        }
+      },
+      {
+        "hash": "0x34780880ae770922d53c2eb6974f78c39edd77efeaabd8246bde6c9fe73f95dc",
+        "label": "deploy-consumer",
+        "receipt": {
+          "status": "FINALIZED",
+          "execution": "SUCCESS",
+          "executionResult": "SUCCESS",
+          "consensusResult": "MAJORITY_AGREE",
+          "leaderOnly": false,
+          "votes": {
+            "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+            "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+            "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+            "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+            "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+          },
+          "createdAt": "2026-10-26T11:19:10.445169+00:00",
+          "observedAt": "2026-10-26T12:00:47.966Z"
+        }
+      }
+    ],
+    "verifiedAt": "2026-10-26T12:00:47.966Z",
+    "notice": "Synthetic checklists and project-controlled test actors. This does not establish production adoption, action execution, infrastructure safety or neutral human reviewers."
+  },
+  "actors": {
+    "coordinator": "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+    "left": "0x492E3ee45923db9EEA6ea41FE2f414e7C0552417",
+    "right": "0x58f9E846b394C862caD8A1f067600da234847df5",
+    "consumer": "0x8d510C0665364BE57B0fCC9bDcAEa42405aB43aa"
+  },
+  "presetDigest": "7ddfff7a7b4d55f134de131db253f0730214b9d4daddb9d618dc58caff040d76",
+  "scenarios": [
+    {
+      "fixture": "auto-merge",
+      "plan": {
+        "base": [
+          {
+            "id": "backup",
+            "text": "Create the backup before the restart task."
+          },
+          {
+            "id": "restart",
+            "text": "Run restart after backup succeeds."
+          }
+        ],
+        "base_digest": "871f8a05832773bf32b59c46ae6bff7b36fa574bdf6e946654fb9c8121227bca",
+        "deployment_domain": "14ce155533895c70b45e2898b2314eaad10dae5762460a9d29c134e1fd54e5ad",
+        "digest": "61ce46855f6c0b1d20b01bb4cd0bcdc80ab03b2e8104f2bb8e53bb5079409557",
+        "id": "auto-merge-v1",
+        "left_author": "0x492e3ee45923db9eea6ea41fe2f414e7c0552417",
+        "owner": "0x9463850b14f1fb7aa71e9029547f7f5832c0931f",
+        "profile": "revisionweave-checklists-v1",
+        "right_author": "0x58f9e846b394c862cad8a1f067600da234847df5",
+        "scope": "One synthetic service; all listed steps share the same maintenance window. Text describes a plan, not an instruction to execute it."
+      },
+      "branches": [
+        {
+          "author": "0x492e3ee45923db9eea6ea41fe2f414e7c0552417",
+          "base_digest": "871f8a05832773bf32b59c46ae6bff7b36fa574bdf6e946654fb9c8121227bca",
+          "digest": "db03770807b8a669fd84eb6070b380cdcb78d7ac07ae085e947b12a995d6c9e9",
+          "items": [
+            {
+              "id": "backup",
+              "text": "Create the backup before restart and record its identifier."
+            },
+            {
+              "id": "restart",
+              "text": "Run restart after backup succeeds."
+            }
+          ],
+          "side": "LEFT",
+          "weave_digest": "61ce46855f6c0b1d20b01bb4cd0bcdc80ab03b2e8104f2bb8e53bb5079409557"
+        },
+        {
+          "author": "0x58f9e846b394c862cad8a1f067600da234847df5",
+          "base_digest": "871f8a05832773bf32b59c46ae6bff7b36fa574bdf6e946654fb9c8121227bca",
+          "digest": "288d3e9be2d42ffc0f9e97c921c1ae96676267058e3ca858f648c4be7fccc6ef",
+          "items": [
+            {
+              "id": "backup",
+              "text": "Create the backup before the restart task."
+            },
+            {
+              "id": "restart",
+              "text": "Run restart after backup succeeds, then record its timestamp."
+            }
+          ],
+          "side": "RIGHT",
+          "weave_digest": "61ce46855f6c0b1d20b01bb4cd0bcdc80ab03b2e8104f2bb8e53bb5079409557"
+        }
+      ],
+      "proposal": {
+        "branch_digests": [
+          "db03770807b8a669fd84eb6070b380cdcb78d7ac07ae085e947b12a995d6c9e9",
+          "288d3e9be2d42ffc0f9e97c921c1ae96676267058e3ca858f648c4be7fccc6ef"
+        ],
+        "choices": {},
+        "digest": "1107c6d5436e7340f4ecd19b0d1f523110e4169d1719361b2fd9089fa9e06f2b",
+        "human_choices_are_not_consensus": true,
+        "items": [
+          {
+            "id": "backup",
+            "text": "Create the backup before restart and record its identifier."
+          },
+          {
+            "id": "restart",
+            "text": "Run restart after backup succeeds, then record its timestamp."
+          }
+        ],
+        "plan_digest": "badf16032f1bdb2a6ce7c72c0816b1b27c82647a49d6d66d188e4a8cc3040c5a",
+        "profile": "revisionweave-checklists-v1",
+        "provenance": [
+          {
+            "deleted": false,
+            "id": "backup",
+            "origin": "AUTO_LEFT",
+            "text_sha256": "b9d5542ad2a9868a64f2fb74c5b6b0b640e318b59e4ea0a0c13cb1a315df6eca"
+          },
+          {
+            "deleted": false,
+            "id": "restart",
+            "origin": "AUTO_RIGHT",
+            "text_sha256": "99ead41cd530378253988c1340de2a69c14f372686c611832e659298c80e849b"
+          }
+        ],
+        "revision": 1,
+        "structural_conflicts": [],
+        "universe": [
+          "backup",
+          "restart"
+        ],
+        "weave_digest": "61ce46855f6c0b1d20b01bb4cd0bcdc80ab03b2e8104f2bb8e53bb5079409557"
+      },
+      "attestation": {
+        "digest": "c4a8bb5c0854531a88d314a93dc2277de6cb5e74f47d301405d571fafb6eed6d",
+        "notice": "Bounded interpretation of submitted text, not command execution or operational safety certification",
+        "profile": "revisionweave-checklists-v1",
+        "proposal_digest": "1107c6d5436e7340f4ecd19b0d1f523110e4169d1719361b2fd9089fa9e06f2b",
+        "reconciliation": {
+          "cyclic_or_blocked_ids": [],
+          "missing_dependencies": [],
+          "order": [
+            "backup",
+            "restart"
+          ],
+          "reasons": [],
+          "status": "READY",
+          "unknown_ids": []
+        },
+        "revision": 1,
+        "semantics": {
+          "conflicts": [],
+          "items": [
+            {
+              "certainty": "KNOWN",
+              "id": "backup",
+              "requires": []
+            },
+            {
+              "certainty": "KNOWN",
+              "id": "restart",
+              "requires": [
+                {
+                  "id": "backup",
+                  "quote": "Run restart after backup succeeds",
+                  "source_id": "restart"
+                }
+              ]
+            }
+          ]
+        },
+        "weave_digest": "61ce46855f6c0b1d20b01bb4cd0bcdc80ab03b2e8104f2bb8e53bb5079409557"
+      },
+      "certificate": {
+        "attestation_digest": "c4a8bb5c0854531a88d314a93dc2277de6cb5e74f47d301405d571fafb6eed6d",
+        "branch_digests": [
+          "db03770807b8a669fd84eb6070b380cdcb78d7ac07ae085e947b12a995d6c9e9",
+          "288d3e9be2d42ffc0f9e97c921c1ae96676267058e3ca858f648c4be7fccc6ef"
+        ],
+        "deployment_domain": "14ce155533895c70b45e2898b2314eaad10dae5762460a9d29c134e1fd54e5ad",
+        "digest": "38659fd033135b61f335cca13812ac214c0ef50959ec78876784ae78ab7f8743",
+        "items": [
+          {
+            "id": "backup",
+            "text": "Create the backup before restart and record its identifier."
+          },
+          {
+            "id": "restart",
+            "text": "Run restart after backup succeeds, then record its timestamp."
+          }
+        ],
+        "notice": "Human branch selections remain human decisions; this certificate attests only the bounded interpretation and deterministic reconciliation",
+        "order": [
+          "backup",
+          "restart"
+        ],
+        "owner": "0x9463850b14f1fb7aa71e9029547f7f5832c0931f",
+        "plan_digest": "badf16032f1bdb2a6ce7c72c0816b1b27c82647a49d6d66d188e4a8cc3040c5a",
+        "profile": "revisionweave-checklists-v1",
+        "proposal_digest": "1107c6d5436e7340f4ecd19b0d1f523110e4169d1719361b2fd9089fa9e06f2b",
+        "provenance": [
+          {
+            "deleted": false,
+            "id": "backup",
+            "origin": "AUTO_LEFT",
+            "text_sha256": "b9d5542ad2a9868a64f2fb74c5b6b0b640e318b59e4ea0a0c13cb1a315df6eca"
+          },
+          {
+            "deleted": false,
+            "id": "restart",
+            "origin": "AUTO_RIGHT",
+            "text_sha256": "99ead41cd530378253988c1340de2a69c14f372686c611832e659298c80e849b"
+          }
+        ],
+        "revision": 1,
+        "weave_digest": "61ce46855f6c0b1d20b01bb4cd0bcdc80ab03b2e8104f2bb8e53bb5079409557",
+        "weave_id": "auto-merge-v1"
+      },
+      "receipt": {
+        "certificate_digest": "38659fd033135b61f335cca13812ac214c0ef50959ec78876784ae78ab7f8743",
+        "consumer": "0x8d510c0665364be57b0fcc9bdcaea42405ab43aa",
+        "deployment_domain": "14ce155533895c70b45e2898b2314eaad10dae5762460a9d29c134e1fd54e5ad",
+        "digest": "748f088edf4b0b4a9e32a450c85eeeda7ea5cc81c5e586c64a174715e173f11d",
+        "id": "auto-merge-v1-receipt",
+        "notice": "Exact provider-bound merged text was read through a cross-contract view; no command was executed",
+        "owner": "0x9463850b14f1fb7aa71e9029547f7f5832c0931f",
+        "plan_digest": "badf16032f1bdb2a6ce7c72c0816b1b27c82647a49d6d66d188e4a8cc3040c5a",
+        "provider": "0x480e227e2759bf88966369b63d9b163ad5893695",
+        "weave_id": "auto-merge-v1"
+      }
+    }
+  ],
+  "transactions": [
+    {
+      "label": "auto-merge-v1-create",
+      "spec": {
+        "kind": "call",
+        "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+        "actor": "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+        "method": "create_weave",
+        "args": [
+          "auto-merge-v1",
+          "0x492E3ee45923db9EEA6ea41FE2f414e7C0552417",
+          "0x58f9E846b394C862caD8A1f067600da234847df5",
+          "One synthetic service; all listed steps share the same maintenance window. Text describes a plan, not an instruction to execute it.",
+          "[{\"id\":\"backup\",\"text\":\"Create the backup before the restart task.\"},{\"id\":\"restart\",\"text\":\"Run restart after backup succeeds.\"}]"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T12:00:51.361Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0xcd61b969ed820ee2146238fafd74ae75bfac515ba9e1f9e75034f80251f7c07c",
+      "submittedAt": "2026-10-26T12:00:53.060Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+        "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+      },
+      "createdAt": "2026-10-26T12:00:53.242569+00:00",
+      "observedAt": "2026-10-26T13:01:59.249Z"
+    },
+    {
+      "label": "auto-merge-v1-left",
+      "spec": {
+        "kind": "call",
+        "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+        "actor": "0x492E3ee45923db9EEA6ea41FE2f414e7C0552417",
+        "method": "submit_branch",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "auto-merge-v1",
+          "LEFT",
+          "871f8a05832773bf32b59c46ae6bff7b36fa574bdf6e946654fb9c8121227bca",
+          "[{\"id\":\"backup\",\"text\":\"Create the backup before restart and record its identifier.\"},{\"id\":\"restart\",\"text\":\"Run restart after backup succeeds.\"}]"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T12:01:01.615Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0x4d865d937340aed6898d786c5fe2cb5520ddd60d9fa11746236d5a3787bfb442",
+      "submittedAt": "2026-10-26T12:01:03.824Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle"
+      },
+      "createdAt": "2026-10-26T12:01:03.741118+00:00",
+      "observedAt": "2026-10-26T13:02:03.580Z"
+    },
+    {
+      "label": "auto-merge-v1-right",
+      "spec": {
+        "kind": "call",
+        "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+        "actor": "0x58f9E846b394C862caD8A1f067600da234847df5",
+        "method": "submit_branch",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "auto-merge-v1",
+          "RIGHT",
+          "871f8a05832773bf32b59c46ae6bff7b36fa574bdf6e946654fb9c8121227bca",
+          "[{\"id\":\"backup\",\"text\":\"Create the backup before the restart task.\"},{\"id\":\"restart\",\"text\":\"Run restart after backup succeeds, then record its timestamp.\"}]"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T12:01:14.397Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0xde2a043a82a3e37664ddfd545d954950182108364cd295752b77bdbdb05a5ea1",
+      "submittedAt": "2026-10-26T12:01:16.296Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree"
+      },
+      "createdAt": "2026-10-26T12:01:16.291338+00:00",
+      "observedAt": "2026-10-26T13:02:05.786Z"
+    },
+    {
+      "label": "auto-merge-v1-propose",
+      "spec": {
+        "kind": "call",
+        "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+        "actor": "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+        "method": "propose_merge",
+        "args": [
+          "auto-merge-v1",
+          "{}"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T12:01:37.067Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0xc02e7111c0d91748fe7f319b9902ccbd9cccb162ec4725923c5f33ffb42aee11",
+      "submittedAt": "2026-10-26T12:01:38.724Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+      },
+      "createdAt": "2026-10-26T12:01:38.881964+00:00",
+      "observedAt": "2026-10-26T13:02:12.390Z"
+    },
+    {
+      "label": "auto-merge-v1-attest",
+      "spec": {
+        "kind": "call",
+        "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+        "actor": "0x58f9E846b394C862caD8A1f067600da234847df5",
+        "method": "attest_merge",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "auto-merge-v1",
+          1,
+          "1107c6d5436e7340f4ecd19b0d1f523110e4169d1719361b2fd9089fa9e06f2b"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T12:01:48.242Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0xe8ec7ba2e6267b67b2aa351771c7962b9377b4df0cbab17cef42aba112832fb2",
+      "submittedAt": "2026-10-26T12:01:50.393Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "idle",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "disagree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree"
+      },
+      "createdAt": "2026-10-26T12:01:50.557567+00:00",
+      "observedAt": "2026-10-26T13:02:16.807Z"
+    },
+    {
+      "label": "auto-merge-v1-certify",
+      "spec": {
+        "kind": "call",
+        "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+        "actor": "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+        "method": "certify",
+        "args": [
+          "auto-merge-v1",
+          1,
+          "c4a8bb5c0854531a88d314a93dc2277de6cb5e74f47d301405d571fafb6eed6d"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T12:02:16.613Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0x6714794c4e26635c17de72f981c1da3b31b46bb57210e05f79cc7e557d5e059e",
+      "submittedAt": "2026-10-26T12:02:18.783Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      },
+      "createdAt": "2026-10-26T12:02:18.924764+00:00",
+      "observedAt": "2026-10-26T13:02:21.189Z"
+    },
+    {
+      "label": "auto-merge-v1-consume",
+      "spec": {
+        "kind": "call",
+        "address": "0xD56445cbFb3f2C8b32232686CFF79c6277340AAe",
+        "actor": "0x8d510C0665364BE57B0fCC9bDcAEa42405aB43aa",
+        "method": "consume",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "auto-merge-v1",
+          "auto-merge-v1-receipt",
+          "38659fd033135b61f335cca13812ac214c0ef50959ec78876784ae78ab7f8743",
+          "badf16032f1bdb2a6ce7c72c0816b1b27c82647a49d6d66d188e4a8cc3040c5a"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T12:02:28.261Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0x5bbd5a8b370eb248ec131f31fc4d7c988411ec01447665255c7b05ef898900ab",
+      "submittedAt": "2026-10-26T12:02:30.065Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+      },
+      "createdAt": "2026-10-26T12:02:30.275971+00:00",
+      "observedAt": "2026-10-26T13:02:25.602Z"
+    },
+    {
+      "label": "manual-conflict-v1-create",
+      "spec": {
+        "kind": "call",
+        "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+        "actor": "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+        "method": "create_weave",
+        "args": [
+          "manual-conflict-v1",
+          "0x492E3ee45923db9EEA6ea41FE2f414e7C0552417",
+          "0x58f9E846b394C862caD8A1f067600da234847df5",
+          "One synthetic service; all listed steps share the same maintenance window. Text describes a plan, not an instruction to execute it.",
+          "[{\"id\":\"color\",\"text\":\"Set deployment color to BLUE.\"}]"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T12:02:52.429Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0xc113f7fe6ea8e7645bc70e90e6c7212158c02bd144f3a1c99b7d6dc857f479a9",
+      "submittedAt": "2026-10-26T12:02:54.837Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      },
+      "createdAt": "2026-10-26T12:02:54.979476+00:00",
+      "observedAt": "2026-10-26T13:02:29.966Z"
+    },
+    {
+      "label": "manual-conflict-v1-left",
+      "spec": {
+        "kind": "call",
+        "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+        "actor": "0x492E3ee45923db9EEA6ea41FE2f414e7C0552417",
+        "method": "submit_branch",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "manual-conflict-v1",
+          "LEFT",
+          "6fbe11c8144bfa90b0d72ec514402d2aee986ee6a4fb95f1b09ca1e27c2c4a10",
+          "[{\"id\":\"color\",\"text\":\"Set deployment color to RED.\"}]"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:02:33.221Z",
+      "status": "ACCEPTED",
+      "execution": "SUCCESS",
+      "hash": "0xa269b110d30ceb024ffc62c6218a84b05b8f9288104a222114fb65f31800bb99",
+      "submittedAt": "2026-10-26T13:02:35.619Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "idle",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+      },
+      "createdAt": "2026-10-26T13:02:34.949809+00:00",
+      "observedAt": "2026-10-26T13:02:41.920Z"
+    },
+    {
+      "label": "manual-conflict-v1-right",
+      "spec": {
+        "kind": "call",
+        "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+        "actor": "0x58f9E846b394C862caD8A1f067600da234847df5",
+        "method": "submit_branch",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "manual-conflict-v1",
+          "RIGHT",
+          "6fbe11c8144bfa90b0d72ec514402d2aee986ee6a4fb95f1b09ca1e27c2c4a10",
+          "[{\"id\":\"color\",\"text\":\"Set deployment color to GREEN.\"}]"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:02:41.930Z",
+      "status": "ACCEPTED",
+      "execution": "SUCCESS",
+      "hash": "0xf99d3d30de56a8525c98b7b29640fa311336fc55ff2bba03c1e041d444a62ff6",
+      "submittedAt": "2026-10-26T13:02:44.472Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+        "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree"
+      },
+      "createdAt": "2026-10-26T13:02:43.848821+00:00",
+      "observedAt": "2026-10-26T13:02:50.158Z"
+    },
+    {
+      "label": "manual-conflict-v1-propose",
+      "spec": {
+        "kind": "call",
+        "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+        "actor": "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+        "method": "propose_merge",
+        "args": [
+          "manual-conflict-v1",
+          "{\"color\":\"LEFT\"}"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:02:59.773Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0xdf69b5379f29d8aa33a997b52d80253f9ab7af1e73d92e6fe4a4d97ac29fb887",
+      "submittedAt": "2026-10-26T13:03:02.104Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      },
+      "createdAt": "2026-10-26T13:03:01.687919+00:00",
+      "observedAt": "2026-10-26T13:03:37.987Z"
+    },
+    {
+      "label": "manual-conflict-v1-attest",
+      "spec": {
+        "kind": "call",
+        "address": "0x480E227e2759bf88966369B63d9b163ad5893695",
+        "actor": "0x58f9E846b394C862caD8A1f067600da234847df5",
+        "method": "attest_merge",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "manual-conflict-v1",
+          1,
+          "fa3d186e35b0e83de1db91d35216de37593f63d71c5c5f8807a47b84865ffcbd"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:03:39.366Z",
+      "status": "FINALIZED",
+      "execution": "UNCONFIRMED_OR_FAILED",
+      "hash": "0x5b92e7f916ce8dbf91e15d09190bb885eedfa57103eb7912fddde6e2e9b1239f",
+      "submittedAt": "2026-10-26T13:03:42.253Z",
+      "executionResult": "ERROR",
+      "consensusResult": "MAJORITY_DISAGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "disagree",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "disagree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "disagree"
+      },
+      "createdAt": "2026-10-26T13:03:40.978143+00:00",
+      "observedAt": "2026-10-26T13:06:06.042Z",
+      "failure": "Validator consensus did not explicitly accept this transaction (MAJORITY_DISAGREE)."
+    }
+  ],
+  "negativeTransactions": [],
+  "manualFailure": {
+    "hash": "0x5b92e7f916ce8dbf91e15d09190bb885eedfa57103eb7912fddde6e2e9b1239f",
+    "lifecycle": "FINALIZED",
+    "consensus": "MAJORITY_DISAGREE",
+    "execution": "ERROR",
+    "rollback": "Conflict pairs must be unique, sorted candidate IDs",
+    "attestationReadBack": null,
+    "certificateReadBack": null,
+    "consumerReceiptReadBack": null
+  },
+  "incomplete": [
+    "manual-conflict certification and consumption",
+    "wrong-branch-author negative test",
+    "wrong-consumer-digest negative test"
+  ],
+  "notice": "Original deployment partial evidence. Auto-merge completed. Manual attestation failed and was not retried. This is not a complete two-scenario workflow."
+}

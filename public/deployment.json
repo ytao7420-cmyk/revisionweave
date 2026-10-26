@@ -1,0 +1,57 @@
+{
+  "deployed": true,
+  "network": "GenLayer Studionet",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "explorer": "https://explorer-studio.genlayer.com",
+  "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+  "consumerAddress": "0x9B01ACE337e3318ecB7eCf5fC3b47203Acd70542",
+  "sourceSha256": "f925e7f97a2ff32278a764a4cb1890bba6481cb484680f5a09cd3c746297b7d4",
+  "consumerSourceSha256": "1fea5923d2217bc81138e7cb17c08aa563465c12ea6fd9d9e5dce20a118d117b",
+  "deploymentDomain": "e0d3b528e4c39edd9525e6e8e2793926a7ad91cae292b183a20cbccff3cd04a3",
+  "deployer": "0x6999C1Bf19CfaaD571785f71e5b8b363a2624fda",
+  "deploymentTransactions": [
+    {
+      "hash": "0x8069ecb660f0b8d8ccd2d7c3a323800501f16acd5eb5ad819652d3ccbb653deb",
+      "label": "deploy-weave",
+      "receipt": {
+        "status": "ACCEPTED",
+        "execution": "SUCCESS",
+        "executionResult": "SUCCESS",
+        "consensusResult": "MAJORITY_AGREE",
+        "leaderOnly": false,
+        "votes": {
+          "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+          "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+          "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "idle",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree"
+        },
+        "createdAt": "2026-10-26T13:26:22.478482+00:00",
+        "observedAt": "2026-10-26T13:26:46.387Z"
+      }
+    },
+    {
+      "hash": "0x45a3d0321577e446dfcf5e31720ba0f8f7b53467cbb8803ba602110acaa7fdee",
+      "label": "deploy-consumer",
+      "receipt": {
+        "status": "ACCEPTED",
+        "execution": "SUCCESS",
+        "executionResult": "SUCCESS",
+        "consensusResult": "MAJORITY_AGREE",
+        "leaderOnly": false,
+        "votes": {
+          "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+          "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+          "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+          "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+          "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+        },
+        "createdAt": "2026-10-26T13:26:35.454359+00:00",
+        "observedAt": "2026-10-26T13:26:46.387Z"
+      }
+    }
+  ],
+  "verifiedAt": "2026-10-26T13:26:46.387Z",
+  "notice": "Synthetic checklists and project-controlled test actors. This does not establish production adoption, action execution, infrastructure safety or neutral human reviewers."
+}

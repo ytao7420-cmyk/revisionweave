@@ -1,0 +1,942 @@
+{
+  "verified": true,
+  "recordedAt": "2026-10-26T13:32:16.562Z",
+  "network": "GenLayer Studionet",
+  "chainId": 61999,
+  "contractAddress": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+  "consumerAddress": "0x9B01ACE337e3318ecB7eCf5fC3b47203Acd70542",
+  "contractSourceSha256": "f925e7f97a2ff32278a764a4cb1890bba6481cb484680f5a09cd3c746297b7d4",
+  "consumerSourceSha256": "1fea5923d2217bc81138e7cb17c08aa563465c12ea6fd9d9e5dce20a118d117b",
+  "deploymentDomain": "e0d3b528e4c39edd9525e6e8e2793926a7ad91cae292b183a20cbccff3cd04a3",
+  "presetDigest": "7ddfff7a7b4d55f134de131db253f0730214b9d4daddb9d618dc58caff040d76",
+  "notice": "Synthetic checklists and project-controlled test actors. This does not establish production adoption, action execution, infrastructure safety or neutral human reviewers.",
+  "actors": {
+    "coordinator": "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+    "left": "0x492E3ee45923db9EEA6ea41FE2f414e7C0552417",
+    "right": "0x58f9E846b394C862caD8A1f067600da234847df5",
+    "consumer": "0x8d510C0665364BE57B0fCC9bDcAEa42405aB43aa"
+  },
+  "scenarios": [
+    {
+      "fixture": "auto-merge",
+      "plan": {
+        "base": [
+          {
+            "id": "backup",
+            "text": "Create the backup before the restart task."
+          },
+          {
+            "id": "restart",
+            "text": "Run restart after backup succeeds."
+          }
+        ],
+        "base_digest": "871f8a05832773bf32b59c46ae6bff7b36fa574bdf6e946654fb9c8121227bca",
+        "deployment_domain": "e0d3b528e4c39edd9525e6e8e2793926a7ad91cae292b183a20cbccff3cd04a3",
+        "digest": "2f1b364e54caf48f688e250a6d86dd8b1fa6ad30e06d90ad3efa7cd6d758dbf5",
+        "id": "auto-merge-v1",
+        "left_author": "0x492e3ee45923db9eea6ea41fe2f414e7c0552417",
+        "owner": "0x9463850b14f1fb7aa71e9029547f7f5832c0931f",
+        "profile": "revisionweave-checklists-v1",
+        "right_author": "0x58f9e846b394c862cad8a1f067600da234847df5",
+        "scope": "One synthetic service; all listed steps share the same maintenance window. Text describes a plan, not an instruction to execute it."
+      },
+      "branches": [
+        {
+          "author": "0x492e3ee45923db9eea6ea41fe2f414e7c0552417",
+          "base_digest": "871f8a05832773bf32b59c46ae6bff7b36fa574bdf6e946654fb9c8121227bca",
+          "digest": "1931d4d95a48423a8089cac438f1747fdfe4f56cf9510ae1208cbe47778e387a",
+          "items": [
+            {
+              "id": "backup",
+              "text": "Create the backup before restart and record its identifier."
+            },
+            {
+              "id": "restart",
+              "text": "Run restart after backup succeeds."
+            }
+          ],
+          "side": "LEFT",
+          "weave_digest": "2f1b364e54caf48f688e250a6d86dd8b1fa6ad30e06d90ad3efa7cd6d758dbf5"
+        },
+        {
+          "author": "0x58f9e846b394c862cad8a1f067600da234847df5",
+          "base_digest": "871f8a05832773bf32b59c46ae6bff7b36fa574bdf6e946654fb9c8121227bca",
+          "digest": "165cd02135bfc4d753becc3e63f9fefd8ae2bdec0e422608935310aa982039a5",
+          "items": [
+            {
+              "id": "backup",
+              "text": "Create the backup before the restart task."
+            },
+            {
+              "id": "restart",
+              "text": "Run restart after backup succeeds, then record its timestamp."
+            }
+          ],
+          "side": "RIGHT",
+          "weave_digest": "2f1b364e54caf48f688e250a6d86dd8b1fa6ad30e06d90ad3efa7cd6d758dbf5"
+        }
+      ],
+      "proposal": {
+        "branch_digests": [
+          "1931d4d95a48423a8089cac438f1747fdfe4f56cf9510ae1208cbe47778e387a",
+          "165cd02135bfc4d753becc3e63f9fefd8ae2bdec0e422608935310aa982039a5"
+        ],
+        "choices": {},
+        "digest": "90fe125a3b8dbc5cae8032940f7625412558102a1c828cf85ed3cfcae79ca66a",
+        "human_choices_are_not_consensus": true,
+        "items": [
+          {
+            "id": "backup",
+            "text": "Create the backup before restart and record its identifier."
+          },
+          {
+            "id": "restart",
+            "text": "Run restart after backup succeeds, then record its timestamp."
+          }
+        ],
+        "plan_digest": "badf16032f1bdb2a6ce7c72c0816b1b27c82647a49d6d66d188e4a8cc3040c5a",
+        "profile": "revisionweave-checklists-v1",
+        "provenance": [
+          {
+            "deleted": false,
+            "id": "backup",
+            "origin": "AUTO_LEFT",
+            "text_sha256": "b9d5542ad2a9868a64f2fb74c5b6b0b640e318b59e4ea0a0c13cb1a315df6eca"
+          },
+          {
+            "deleted": false,
+            "id": "restart",
+            "origin": "AUTO_RIGHT",
+            "text_sha256": "99ead41cd530378253988c1340de2a69c14f372686c611832e659298c80e849b"
+          }
+        ],
+        "revision": 1,
+        "structural_conflicts": [],
+        "universe": [
+          "backup",
+          "restart"
+        ],
+        "weave_digest": "2f1b364e54caf48f688e250a6d86dd8b1fa6ad30e06d90ad3efa7cd6d758dbf5"
+      },
+      "attestation": {
+        "digest": "df47d14f1d3f8e18343f28fadca887a2f16c65904cac4ddea93e5d73bdad2133",
+        "notice": "Bounded interpretation of submitted text, not command execution or operational safety certification",
+        "profile": "revisionweave-checklists-v1",
+        "proposal_digest": "90fe125a3b8dbc5cae8032940f7625412558102a1c828cf85ed3cfcae79ca66a",
+        "reconciliation": {
+          "cyclic_or_blocked_ids": [],
+          "missing_dependencies": [],
+          "order": [
+            "backup",
+            "restart"
+          ],
+          "reasons": [],
+          "status": "READY",
+          "unknown_ids": []
+        },
+        "revision": 1,
+        "semantics": {
+          "conflicts": [],
+          "items": [
+            {
+              "certainty": "KNOWN",
+              "id": "backup",
+              "requires": []
+            },
+            {
+              "certainty": "KNOWN",
+              "id": "restart",
+              "requires": [
+                {
+                  "id": "backup",
+                  "quote": "Create the backup before restart and record its identifier.",
+                  "source_id": "backup"
+                }
+              ]
+            }
+          ]
+        },
+        "weave_digest": "2f1b364e54caf48f688e250a6d86dd8b1fa6ad30e06d90ad3efa7cd6d758dbf5"
+      },
+      "certificate": {
+        "attestation_digest": "df47d14f1d3f8e18343f28fadca887a2f16c65904cac4ddea93e5d73bdad2133",
+        "branch_digests": [
+          "1931d4d95a48423a8089cac438f1747fdfe4f56cf9510ae1208cbe47778e387a",
+          "165cd02135bfc4d753becc3e63f9fefd8ae2bdec0e422608935310aa982039a5"
+        ],
+        "deployment_domain": "e0d3b528e4c39edd9525e6e8e2793926a7ad91cae292b183a20cbccff3cd04a3",
+        "digest": "f89a0398de62dabb3d60956470338db46acc60cd48a007b3322e25aa7a905374",
+        "items": [
+          {
+            "id": "backup",
+            "text": "Create the backup before restart and record its identifier."
+          },
+          {
+            "id": "restart",
+            "text": "Run restart after backup succeeds, then record its timestamp."
+          }
+        ],
+        "notice": "Human branch selections remain human decisions; this certificate attests only the bounded interpretation and deterministic reconciliation",
+        "order": [
+          "backup",
+          "restart"
+        ],
+        "owner": "0x9463850b14f1fb7aa71e9029547f7f5832c0931f",
+        "plan_digest": "badf16032f1bdb2a6ce7c72c0816b1b27c82647a49d6d66d188e4a8cc3040c5a",
+        "profile": "revisionweave-checklists-v1",
+        "proposal_digest": "90fe125a3b8dbc5cae8032940f7625412558102a1c828cf85ed3cfcae79ca66a",
+        "provenance": [
+          {
+            "deleted": false,
+            "id": "backup",
+            "origin": "AUTO_LEFT",
+            "text_sha256": "b9d5542ad2a9868a64f2fb74c5b6b0b640e318b59e4ea0a0c13cb1a315df6eca"
+          },
+          {
+            "deleted": false,
+            "id": "restart",
+            "origin": "AUTO_RIGHT",
+            "text_sha256": "99ead41cd530378253988c1340de2a69c14f372686c611832e659298c80e849b"
+          }
+        ],
+        "revision": 1,
+        "weave_digest": "2f1b364e54caf48f688e250a6d86dd8b1fa6ad30e06d90ad3efa7cd6d758dbf5",
+        "weave_id": "auto-merge-v1"
+      },
+      "receipt": {
+        "certificate_digest": "f89a0398de62dabb3d60956470338db46acc60cd48a007b3322e25aa7a905374",
+        "consumer": "0x8d510c0665364be57b0fcc9bdcaea42405ab43aa",
+        "deployment_domain": "e0d3b528e4c39edd9525e6e8e2793926a7ad91cae292b183a20cbccff3cd04a3",
+        "digest": "8104256fe76bb84f480e956e2bf30bd99ba8ef3afbf3c56f3506a6815e5c2b69",
+        "id": "auto-merge-v1-receipt",
+        "notice": "Exact provider-bound merged text was read through a cross-contract view; no command was executed",
+        "owner": "0x9463850b14f1fb7aa71e9029547f7f5832c0931f",
+        "plan_digest": "badf16032f1bdb2a6ce7c72c0816b1b27c82647a49d6d66d188e4a8cc3040c5a",
+        "provider": "0xe48724e68acac9eb053bfbaa2eb77482486028df",
+        "weave_id": "auto-merge-v1"
+      }
+    },
+    {
+      "fixture": "manual-conflict",
+      "plan": {
+        "base": [
+          {
+            "id": "color",
+            "text": "Set deployment color to BLUE."
+          }
+        ],
+        "base_digest": "6fbe11c8144bfa90b0d72ec514402d2aee986ee6a4fb95f1b09ca1e27c2c4a10",
+        "deployment_domain": "e0d3b528e4c39edd9525e6e8e2793926a7ad91cae292b183a20cbccff3cd04a3",
+        "digest": "0de2d8f71be3001ed9d02c83a81b65073bb9fb389b00130736beaa5f3bd60ea5",
+        "id": "manual-conflict-v1",
+        "left_author": "0x492e3ee45923db9eea6ea41fe2f414e7c0552417",
+        "owner": "0x9463850b14f1fb7aa71e9029547f7f5832c0931f",
+        "profile": "revisionweave-checklists-v1",
+        "right_author": "0x58f9e846b394c862cad8a1f067600da234847df5",
+        "scope": "One synthetic service; all listed steps share the same maintenance window. Text describes a plan, not an instruction to execute it."
+      },
+      "branches": [
+        {
+          "author": "0x492e3ee45923db9eea6ea41fe2f414e7c0552417",
+          "base_digest": "6fbe11c8144bfa90b0d72ec514402d2aee986ee6a4fb95f1b09ca1e27c2c4a10",
+          "digest": "c3832dc9b14067cd3e9a4811e86597ef52c65e3ae81459d23971a43d443224e9",
+          "items": [
+            {
+              "id": "color",
+              "text": "Set deployment color to RED."
+            }
+          ],
+          "side": "LEFT",
+          "weave_digest": "0de2d8f71be3001ed9d02c83a81b65073bb9fb389b00130736beaa5f3bd60ea5"
+        },
+        {
+          "author": "0x58f9e846b394c862cad8a1f067600da234847df5",
+          "base_digest": "6fbe11c8144bfa90b0d72ec514402d2aee986ee6a4fb95f1b09ca1e27c2c4a10",
+          "digest": "792426f482eb7b9b29db1b4db6793c1d8f8972867cf20905358cf52fc5e56167",
+          "items": [
+            {
+              "id": "color",
+              "text": "Set deployment color to GREEN."
+            }
+          ],
+          "side": "RIGHT",
+          "weave_digest": "0de2d8f71be3001ed9d02c83a81b65073bb9fb389b00130736beaa5f3bd60ea5"
+        }
+      ],
+      "proposal": {
+        "branch_digests": [
+          "c3832dc9b14067cd3e9a4811e86597ef52c65e3ae81459d23971a43d443224e9",
+          "792426f482eb7b9b29db1b4db6793c1d8f8972867cf20905358cf52fc5e56167"
+        ],
+        "choices": {
+          "color": "LEFT"
+        },
+        "digest": "39461929ae8ecfc729b9c65a311cca8e60bd173fa1558630dca60fa61ab91cfa",
+        "human_choices_are_not_consensus": true,
+        "items": [
+          {
+            "id": "color",
+            "text": "Set deployment color to RED."
+          }
+        ],
+        "plan_digest": "f5489f6c80451556481fe1982decfd9daef5343ad0ecb995fc588d20d5d91816",
+        "profile": "revisionweave-checklists-v1",
+        "provenance": [
+          {
+            "deleted": false,
+            "id": "color",
+            "origin": "HUMAN_LEFT",
+            "text_sha256": "87859bab4448777fe86237d383563d5119a41d6d70935cadf8a223282386c969"
+          }
+        ],
+        "revision": 1,
+        "structural_conflicts": [
+          "color"
+        ],
+        "universe": [
+          "color"
+        ],
+        "weave_digest": "0de2d8f71be3001ed9d02c83a81b65073bb9fb389b00130736beaa5f3bd60ea5"
+      },
+      "attestation": {
+        "digest": "bcfeb4ea9c5c6e8082a6c55d9d1fe4e9fcbaaa70982ab81457d05bc3a1fbbd11",
+        "notice": "Bounded interpretation of submitted text, not command execution or operational safety certification",
+        "profile": "revisionweave-checklists-v1",
+        "proposal_digest": "39461929ae8ecfc729b9c65a311cca8e60bd173fa1558630dca60fa61ab91cfa",
+        "reconciliation": {
+          "cyclic_or_blocked_ids": [],
+          "missing_dependencies": [],
+          "order": [
+            "color"
+          ],
+          "reasons": [],
+          "status": "READY",
+          "unknown_ids": []
+        },
+        "revision": 1,
+        "semantics": {
+          "conflicts": [],
+          "items": [
+            {
+              "certainty": "KNOWN",
+              "id": "color",
+              "requires": []
+            }
+          ]
+        },
+        "weave_digest": "0de2d8f71be3001ed9d02c83a81b65073bb9fb389b00130736beaa5f3bd60ea5"
+      },
+      "certificate": {
+        "attestation_digest": "bcfeb4ea9c5c6e8082a6c55d9d1fe4e9fcbaaa70982ab81457d05bc3a1fbbd11",
+        "branch_digests": [
+          "c3832dc9b14067cd3e9a4811e86597ef52c65e3ae81459d23971a43d443224e9",
+          "792426f482eb7b9b29db1b4db6793c1d8f8972867cf20905358cf52fc5e56167"
+        ],
+        "deployment_domain": "e0d3b528e4c39edd9525e6e8e2793926a7ad91cae292b183a20cbccff3cd04a3",
+        "digest": "ca265b8a33521f3e43f0eb558f8d51974007b952274461656649787fae955472",
+        "items": [
+          {
+            "id": "color",
+            "text": "Set deployment color to RED."
+          }
+        ],
+        "notice": "Human branch selections remain human decisions; this certificate attests only the bounded interpretation and deterministic reconciliation",
+        "order": [
+          "color"
+        ],
+        "owner": "0x9463850b14f1fb7aa71e9029547f7f5832c0931f",
+        "plan_digest": "f5489f6c80451556481fe1982decfd9daef5343ad0ecb995fc588d20d5d91816",
+        "profile": "revisionweave-checklists-v1",
+        "proposal_digest": "39461929ae8ecfc729b9c65a311cca8e60bd173fa1558630dca60fa61ab91cfa",
+        "provenance": [
+          {
+            "deleted": false,
+            "id": "color",
+            "origin": "HUMAN_LEFT",
+            "text_sha256": "87859bab4448777fe86237d383563d5119a41d6d70935cadf8a223282386c969"
+          }
+        ],
+        "revision": 1,
+        "weave_digest": "0de2d8f71be3001ed9d02c83a81b65073bb9fb389b00130736beaa5f3bd60ea5",
+        "weave_id": "manual-conflict-v1"
+      },
+      "receipt": {
+        "certificate_digest": "ca265b8a33521f3e43f0eb558f8d51974007b952274461656649787fae955472",
+        "consumer": "0x8d510c0665364be57b0fcc9bdcaea42405ab43aa",
+        "deployment_domain": "e0d3b528e4c39edd9525e6e8e2793926a7ad91cae292b183a20cbccff3cd04a3",
+        "digest": "950ed6be8ad72e2f9cd2c246cd3186ae88383631ca9fb342c67b9c2fd5c727b1",
+        "id": "manual-conflict-v1-receipt",
+        "notice": "Exact provider-bound merged text was read through a cross-contract view; no command was executed",
+        "owner": "0x9463850b14f1fb7aa71e9029547f7f5832c0931f",
+        "plan_digest": "f5489f6c80451556481fe1982decfd9daef5343ad0ecb995fc588d20d5d91816",
+        "provider": "0xe48724e68acac9eb053bfbaa2eb77482486028df",
+        "weave_id": "manual-conflict-v1"
+      }
+    }
+  ],
+  "negativeReceiptReadBack": null,
+  "transactions": [
+    {
+      "label": "auto-merge-v1-create",
+      "spec": {
+        "kind": "call",
+        "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+        "actor": "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+        "method": "create_weave",
+        "args": [
+          "auto-merge-v1",
+          "0x492E3ee45923db9EEA6ea41FE2f414e7C0552417",
+          "0x58f9E846b394C862caD8A1f067600da234847df5",
+          "One synthetic service; all listed steps share the same maintenance window. Text describes a plan, not an instruction to execute it.",
+          "[{\"id\":\"backup\",\"text\":\"Create the backup before the restart task.\"},{\"id\":\"restart\",\"text\":\"Run restart after backup succeeds.\"}]"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:27:18.668Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0x5f43d6241b707f028deaf2e17ecff10577fe13a772a7d9e2296bf6a3b9627076",
+      "submittedAt": "2026-10-26T13:27:20.395Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+      },
+      "createdAt": "2026-10-26T13:27:20.026653+00:00",
+      "observedAt": "2026-10-26T13:31:47.855Z"
+    },
+    {
+      "label": "auto-merge-v1-left",
+      "spec": {
+        "kind": "call",
+        "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+        "actor": "0x492E3ee45923db9EEA6ea41FE2f414e7C0552417",
+        "method": "submit_branch",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "auto-merge-v1",
+          "LEFT",
+          "871f8a05832773bf32b59c46ae6bff7b36fa574bdf6e946654fb9c8121227bca",
+          "[{\"id\":\"backup\",\"text\":\"Create the backup before restart and record its identifier.\"},{\"id\":\"restart\",\"text\":\"Run restart after backup succeeds.\"}]"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:27:28.908Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0x6a716fcb01e4e2ca3fa6d6a6216b6193c17a73e619e76267e3d8621160db99e2",
+      "submittedAt": "2026-10-26T13:27:30.699Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+      },
+      "createdAt": "2026-10-26T13:27:30.304742+00:00",
+      "observedAt": "2026-10-26T13:31:50.023Z"
+    },
+    {
+      "label": "auto-merge-v1-right",
+      "spec": {
+        "kind": "call",
+        "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+        "actor": "0x58f9E846b394C862caD8A1f067600da234847df5",
+        "method": "submit_branch",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "auto-merge-v1",
+          "RIGHT",
+          "871f8a05832773bf32b59c46ae6bff7b36fa574bdf6e946654fb9c8121227bca",
+          "[{\"id\":\"backup\",\"text\":\"Create the backup before the restart task.\"},{\"id\":\"restart\",\"text\":\"Run restart after backup succeeds, then record its timestamp.\"}]"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:27:35.811Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0x24e23b6674d91da846eaa58cce43c91567be600715461a9109d89cf1f1c6114e",
+      "submittedAt": "2026-10-26T13:27:38.093Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+      },
+      "createdAt": "2026-10-26T13:27:37.679684+00:00",
+      "observedAt": "2026-10-26T13:31:52.233Z"
+    },
+    {
+      "label": "auto-merge-v1-propose",
+      "spec": {
+        "kind": "call",
+        "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+        "actor": "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+        "method": "propose_merge",
+        "args": [
+          "auto-merge-v1",
+          "{}"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:27:48.170Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0x7fdb5d6f24f6edf0651e98992827c101ed41e4b2f9a0e06901b9931c40ef5a53",
+      "submittedAt": "2026-10-26T13:27:50.371Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "idle",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+      },
+      "createdAt": "2026-10-26T13:27:49.990061+00:00",
+      "observedAt": "2026-10-26T13:31:54.502Z"
+    },
+    {
+      "label": "auto-merge-v1-attest",
+      "spec": {
+        "kind": "call",
+        "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+        "actor": "0x58f9E846b394C862caD8A1f067600da234847df5",
+        "method": "attest_merge",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "auto-merge-v1",
+          1,
+          "90fe125a3b8dbc5cae8032940f7625412558102a1c828cf85ed3cfcae79ca66a"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:27:58.968Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0x1591e1205df71e5d0adc196411648d59725990ee8ac5204632a003d1ea0df15a",
+      "submittedAt": "2026-10-26T13:28:00.854Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "disagree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "disagree"
+      },
+      "createdAt": "2026-10-26T13:28:00.462446+00:00",
+      "observedAt": "2026-10-26T13:31:56.985Z"
+    },
+    {
+      "label": "auto-merge-v1-certify",
+      "spec": {
+        "kind": "call",
+        "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+        "actor": "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+        "method": "certify",
+        "args": [
+          "auto-merge-v1",
+          1,
+          "df47d14f1d3f8e18343f28fadca887a2f16c65904cac4ddea93e5d73bdad2133"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:28:51.970Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0x8351c1fe1c3e0ca7cf0541976a7dc0c6b27bd3cbaf1f2144eb8107df992e5612",
+      "submittedAt": "2026-10-26T13:28:53.997Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+      },
+      "createdAt": "2026-10-26T13:28:53.498843+00:00",
+      "observedAt": "2026-10-26T13:31:59.538Z"
+    },
+    {
+      "label": "auto-merge-v1-consume",
+      "spec": {
+        "kind": "call",
+        "address": "0x9B01ACE337e3318ecB7eCf5fC3b47203Acd70542",
+        "actor": "0x8d510C0665364BE57B0fCC9bDcAEa42405aB43aa",
+        "method": "consume",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "auto-merge-v1",
+          "auto-merge-v1-receipt",
+          "f89a0398de62dabb3d60956470338db46acc60cd48a007b3322e25aa7a905374",
+          "badf16032f1bdb2a6ce7c72c0816b1b27c82647a49d6d66d188e4a8cc3040c5a"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:29:02.697Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0x304ba6dd4d54e38dd2a5e99a77b56c6c6dcaf0d3df213455c2fb9d50e7493d71",
+      "submittedAt": "2026-10-26T13:29:04.523Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "idle",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+      },
+      "createdAt": "2026-10-26T13:29:04.058806+00:00",
+      "observedAt": "2026-10-26T13:32:01.034Z"
+    },
+    {
+      "label": "manual-conflict-v1-create",
+      "spec": {
+        "kind": "call",
+        "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+        "actor": "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+        "method": "create_weave",
+        "args": [
+          "manual-conflict-v1",
+          "0x492E3ee45923db9EEA6ea41FE2f414e7C0552417",
+          "0x58f9E846b394C862caD8A1f067600da234847df5",
+          "One synthetic service; all listed steps share the same maintenance window. Text describes a plan, not an instruction to execute it.",
+          "[{\"id\":\"color\",\"text\":\"Set deployment color to BLUE.\"}]"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:29:12.731Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0xc950cc969e95830c7f91e89d0d78742c2386d90bd6fbdb308e0ce5b53a9e9e8d",
+      "submittedAt": "2026-10-26T13:29:15.524Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "idle"
+      },
+      "createdAt": "2026-10-26T13:29:14.536770+00:00",
+      "observedAt": "2026-10-26T13:32:03.349Z"
+    },
+    {
+      "label": "manual-conflict-v1-left",
+      "spec": {
+        "kind": "call",
+        "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+        "actor": "0x492E3ee45923db9EEA6ea41FE2f414e7C0552417",
+        "method": "submit_branch",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "manual-conflict-v1",
+          "LEFT",
+          "6fbe11c8144bfa90b0d72ec514402d2aee986ee6a4fb95f1b09ca1e27c2c4a10",
+          "[{\"id\":\"color\",\"text\":\"Set deployment color to RED.\"}]"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:29:25.105Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0xa8ead9b0bbaa336b60360443235fc200b514a322847998861c31d22bdd460d32",
+      "submittedAt": "2026-10-26T13:29:27.130Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+      },
+      "createdAt": "2026-10-26T13:29:26.714868+00:00",
+      "observedAt": "2026-10-26T13:32:05.422Z"
+    },
+    {
+      "label": "manual-conflict-v1-right",
+      "spec": {
+        "kind": "call",
+        "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+        "actor": "0x58f9E846b394C862caD8A1f067600da234847df5",
+        "method": "submit_branch",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "manual-conflict-v1",
+          "RIGHT",
+          "6fbe11c8144bfa90b0d72ec514402d2aee986ee6a4fb95f1b09ca1e27c2c4a10",
+          "[{\"id\":\"color\",\"text\":\"Set deployment color to GREEN.\"}]"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:29:32.637Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0xae28ee17138bdad409a484049e51fd91ef5812c2f52d9368ad1cf3817a3f0bb7",
+      "submittedAt": "2026-10-26T13:29:34.814Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "idle",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle"
+      },
+      "createdAt": "2026-10-26T13:29:34.432059+00:00",
+      "observedAt": "2026-10-26T13:32:08.339Z"
+    },
+    {
+      "label": "manual-conflict-v1-propose",
+      "spec": {
+        "kind": "call",
+        "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+        "actor": "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+        "method": "propose_merge",
+        "args": [
+          "manual-conflict-v1",
+          "{\"color\":\"LEFT\"}"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:29:44.869Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0xb9f6bd672816f5464fd654088921574f75fe506b9b4962c3ee867792bd7cfd7f",
+      "submittedAt": "2026-10-26T13:29:46.467Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle"
+      },
+      "createdAt": "2026-10-26T13:29:46.130409+00:00",
+      "observedAt": "2026-10-26T13:32:09.910Z"
+    },
+    {
+      "label": "manual-conflict-v1-attest",
+      "spec": {
+        "kind": "call",
+        "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+        "actor": "0x58f9E846b394C862caD8A1f067600da234847df5",
+        "method": "attest_merge",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "manual-conflict-v1",
+          1,
+          "39461929ae8ecfc729b9c65a311cca8e60bd173fa1558630dca60fa61ab91cfa"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:29:57.547Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0x2aa2cbbfb6ba0da9cd6f39490d33b5dcf787af8cdd72cb274052dcadae0e41f6",
+      "submittedAt": "2026-10-26T13:29:59.423Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "disagree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "disagree"
+      },
+      "createdAt": "2026-10-26T13:29:59.018391+00:00",
+      "observedAt": "2026-10-26T13:32:12.486Z"
+    },
+    {
+      "label": "manual-conflict-v1-certify",
+      "spec": {
+        "kind": "call",
+        "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+        "actor": "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+        "method": "certify",
+        "args": [
+          "manual-conflict-v1",
+          1,
+          "bcfeb4ea9c5c6e8082a6c55d9d1fe4e9fcbaaa70982ab81457d05bc3a1fbbd11"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:30:23.866Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0x308e28fe8a6ead81c4db76b71e187790b2649172373f687299f75a6d90fdf019",
+      "submittedAt": "2026-10-26T13:30:26.876Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "idle",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+      },
+      "createdAt": "2026-10-26T13:30:26.078820+00:00",
+      "observedAt": "2026-10-26T13:32:14.560Z"
+    },
+    {
+      "label": "manual-conflict-v1-consume",
+      "spec": {
+        "kind": "call",
+        "address": "0x9B01ACE337e3318ecB7eCf5fC3b47203Acd70542",
+        "actor": "0x8d510C0665364BE57B0fCC9bDcAEa42405aB43aa",
+        "method": "consume",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "manual-conflict-v1",
+          "manual-conflict-v1-receipt",
+          "ca265b8a33521f3e43f0eb558f8d51974007b952274461656649787fae955472",
+          "f5489f6c80451556481fe1982decfd9daef5343ad0ecb995fc588d20d5d91816"
+        ],
+        "value": "0",
+        "leaderOnly": false
+      },
+      "intendedAt": "2026-10-26T13:30:35.307Z",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "hash": "0xeb0ef4760dbe4ed75390b69b13c46cb6fed23f2841a32f0514c0d42e05622e66",
+      "submittedAt": "2026-10-26T13:30:37.383Z",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree"
+      },
+      "createdAt": "2026-10-26T13:30:36.921841+00:00",
+      "observedAt": "2026-10-26T13:32:16.559Z"
+    }
+  ],
+  "negativeTransactions": [
+    {
+      "label": "wrong-branch-author",
+      "spec": {
+        "kind": "call",
+        "address": "0xe48724E68AcAc9eb053BfbaA2eB77482486028dF",
+        "actor": "0x8d510C0665364BE57B0fCC9bDcAEa42405aB43aa",
+        "method": "submit_branch",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "auto-merge-v1",
+          "LEFT",
+          "871f8a05832773bf32b59c46ae6bff7b36fa574bdf6e946654fb9c8121227bca",
+          "[{\"id\":\"backup\",\"text\":\"Create the backup before restart and record its identifier.\"},{\"id\":\"restart\",\"text\":\"Run restart after backup succeeds.\"}]"
+        ],
+        "value": "0",
+        "leaderOnly": false,
+        "expectedRollback": "Only the designated branch author may submit"
+      },
+      "intendedAt": "2026-10-26T13:31:00.708Z",
+      "status": "ACCEPTED",
+      "execution": "ERROR",
+      "hash": "0xe6778bda2039512a6ea46768c8e262526dda50a06a35622dfe9bc55fa073e8ab",
+      "submittedAt": "2026-10-26T13:31:02.591Z",
+      "executionResult": "ERROR",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree"
+      },
+      "createdAt": "2026-10-26T13:31:02.131908+00:00",
+      "observedAt": "2026-10-26T13:31:17.938Z",
+      "expectedFailure": true,
+      "expectedRollbackVerified": true,
+      "decodedRollback": "Only the designated branch author may submit",
+      "leaderResultStatus": "rollback",
+      "outcome": "EXPECTED_REJECTION"
+    },
+    {
+      "label": "wrong-consumer-digest",
+      "spec": {
+        "kind": "call",
+        "address": "0x9B01ACE337e3318ecB7eCf5fC3b47203Acd70542",
+        "actor": "0x8d510C0665364BE57B0fCC9bDcAEa42405aB43aa",
+        "method": "consume",
+        "args": [
+          "0x9463850b14F1Fb7Aa71E9029547f7f5832c0931f",
+          "auto-merge-v1",
+          "wrong-digest",
+          "0000000000000000000000000000000000000000000000000000000000000000",
+          "badf16032f1bdb2a6ce7c72c0816b1b27c82647a49d6d66d188e4a8cc3040c5a"
+        ],
+        "value": "0",
+        "leaderOnly": false,
+        "expectedRollback": "Certificate or plan digest does not match consumer intent"
+      },
+      "intendedAt": "2026-10-26T13:31:17.939Z",
+      "status": "ACCEPTED",
+      "execution": "ERROR",
+      "hash": "0x6cba9b4fa7876d06e11a955a11da6c333f51ad378ad06dad8cd0f9c6068155bf",
+      "submittedAt": "2026-10-26T13:31:21.611Z",
+      "executionResult": "ERROR",
+      "consensusResult": "MAJORITY_AGREE",
+      "leaderOnly": false,
+      "votes": {
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+      },
+      "createdAt": "2026-10-26T13:31:21.170647+00:00",
+      "observedAt": "2026-10-26T13:31:45.269Z",
+      "expectedFailure": true,
+      "expectedRollbackVerified": true,
+      "decodedRollback": "Certificate or plan digest does not match consumer intent",
+      "leaderResultStatus": "rollback",
+      "outcome": "EXPECTED_REJECTION"
+    }
+  ]
+}

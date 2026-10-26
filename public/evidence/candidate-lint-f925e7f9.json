@@ -1,0 +1,1 @@
+{"ok":true,"lint":{"ok":true,"passed":3},"validate":{"ok":true,"contract":"RevisionWeave","methods":13,"view_methods":7,"write_methods":6,"ctor_params":1,"warnings":[{"code":"I200","msg":"py-genlayer: a newer runner is available (babwp9t37jw9g4j2bccgn14g6x7x9s1f7dsmh7emvz735pz4zxa0). See https://github.com/genlayerlabs/genvm-manager/releases for changes."}]}}
